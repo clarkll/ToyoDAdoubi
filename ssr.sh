@@ -754,7 +754,7 @@ Install_Libsodium(){
 		echo -e "${Info} libsodium 未安装，开始安装..."
 	fi
 	Check_Libsodium_ver
-	if [[ ${release} == "centos" ]]; then
+	if [[ ${archive} == "centos" ]]; then
 		yum update
 		echo -e "${Info} 安装依赖..."
 		yum -y groupinstall "Development Tools"
